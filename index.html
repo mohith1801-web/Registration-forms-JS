@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>REGISTER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="content">
+        <h1 class="title">STUDENT FORM</h1>
+
+
+    <!-- form -->
+     <div id="form">
+     <form>
+
+        <table border="1" cellpadding="8">
+        <tr>
+            <td>NAME</td><td><input id="name" type="text" placeholder="Your Name"></td>
+        </tr>
+        <br><br>
+
+        <tr>
+            <td>AGE</td><td><input id="age" type="text" placeholder="Your Age"></td>
+        </tr>
+
+        <tr>
+            <td>GENDER</td>
+            <td>
+                <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female"> Female
+        </td>
+        </tr>
+
+        <tr>
+            <td>COURSE</td>
+            <td>
+                <select id="course">
+                <option>JAVA SCRIPT</option>
+                <option>JAVA</option>
+                <option>PYTHON</option>
+                </select>
+        </td>
+        </tr>
+
+        <tr>
+            <td>MAIL ID</td><td><input id="mail" type="email" placeholder="Your MailID"></td>
+        </tr>
+
+       <tr>
+        <td colspan="2" align="center" id="btnn">
+<button id="btn1" onclick="save(event)">SAVE</button>
+    </tr>
+
+        </table>
+        </form>
+     </div>
+
+
+     <div class="saved_data">
+     <table border="1" id="studentTable">
+<tr>
+<th>NAME</th>
+<th>AGE</th>
+<th>COURSE</th>
+<th>GENDER</th>
+<th>EMAIL</th>
+<th>ACTION</th>
+</tr>
+</table>
+</div>
+
+
+<button id="del" onclick="del(this)">DELETE</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
